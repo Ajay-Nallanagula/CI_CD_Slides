@@ -1,0 +1,57 @@
+Why we need to learn Unix/Linux:
+Kernel , is playing vital role in Hypervisor, Docker containers
+
+Kernel is a program, which interprets user developedd programs 
+
+Why is it not infected by Windows ?
+Any program should be in Kernel readable format in Unix/Linux where as in windows  its different
+
+What is Linux/Ubuntu/Solaris/IBM-AX when compared to Unix ?
+Kernel was opensourced in early 1980's , everybody started building their own OS version.
+
+Even Jenkins is Open Source. Can be used to built your own custom version of Jenkins
+
+Even windows can be customised Like the corporate folks tweak it, by diabling few features like in Mphasis
+
+Client Os Vs Enterprise OS:
+Enterprise provides network level features, for exx : Active Directory, these are not used by Client Os
+
+FAT- Windowss file system 
+EXT : Linux file system
+SDK : Sun Solarsis Filess System 
+
+Registers on Motherboard, carry data propogatess communication, carriess Kb's of data
+Disk Defragmentation : 
+/root
+under /root --> /bin,/sbin,/etc,/dev,/dev,/home,/user
+
+Why Linux is used in Production/Deployment Environments ??
+
+pwd : present working directory
+ls:  all the files in current structure
+
+How to determine directory/Files
+
+What are operators in Linux?
+man is help for commands
+ex : man ls , you get documentation 
+
+directory starts with d
+
+user vs group 
+drwx-xr-xr : user/owner-group-allothers
+
+mkdir <dirName>
+ls -lart
+cd 
+mkdir
+copy command cp
+change access permissions
+chown
+chgrp
+chmod
+
+install Vs cp
+
+
+

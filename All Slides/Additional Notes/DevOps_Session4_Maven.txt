@@ -1,0 +1,22 @@
+Maven is a build automation tool
+Your IDE itself can act as a build automation tool in development tool
+Jenkins is CI tool not build Automation Tool. CI is building the build pipeline. 
+
+Befor Maven there waas ANT for build automation , there were some drawbacks with ANT (explore on this).
+
+Maven Installation 
+Maven is Apache product, its opensource and free. 
+We can make changes to the maven code and distribute it 
+
+https://maven.apache.org/install.html
+
+Java is pre-requisite for Maven, maven is build automation tool for Java. 
+
+.net uses msbuild/Nant automation,
+
+Meaningful article
+https://www.devbridge.com/articles/continuous-integration-delivery-and-deployment-in-net-projects/
+
+
+
+

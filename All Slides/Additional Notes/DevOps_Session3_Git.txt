@@ -1,0 +1,33 @@
+Version Control Systems
+commit : you commit to local copy
+push: then you push to your local copy,
+pull : git pull, when you face conflicts and then you push your changes 
+
+checkout in git, 
+svn checkout will pull and keep the entire branch in svn there is no local branch copy.
+
+git diff: finds the differences 
+git config --global user.name "YOUR NAME"
+git config --global user.email "YOUR EMAIL"
+
+git config --local user.name "YOUR NAME"
+git config --local user.email "YOUR EMAIL"
+
+This can help while working in two projects one client and one in local
+
+git stash(git stage) : will make a local copy of your changes and keep it aside,
+then you can take the latest/checkout and apply your stashed changes.
+
+git reset would do same as git checkout, override your local changes.
+
+What is fork in git ??
+fork is similar to clone, but clone creates the local copy, where as fork creates a remotecopy of the repository, 
+on this forked repo you can create branches, merge etc all the activites , once all the work  is done we need to raise PR to get the chages merged from fork repository to actual repository.
+
+This is applicable in scenarios where client don't want his code base be disturbed , and have multiple vendors working on different modules.
+
+
+IPS : google cloud:
+35.227.82.201
+104.196.33.228
+35.196.130.243

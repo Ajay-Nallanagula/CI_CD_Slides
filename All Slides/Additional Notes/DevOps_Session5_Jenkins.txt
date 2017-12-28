@@ -1,0 +1,23 @@
+Jenkins is CI tool, it monitors VCS(git) start and monitor a build system if changes occur
+Jenkins provides reports notifications alerts on success or error
+
+CI/CD(Delivery)
+CI dev practice , commit dev changes to dev repo several times a day, every commit made is then built this allows to detect problems early
+CD(Deployment) : continous deployment, sucessful build will be deployed automatically
+CD(Delivery): its slightly diff from Continous deployment business decides when to deploy changes rather than IT team deciding it, its manual it can be scheduled
+
+Jargon
+Policing, checking the changes by jenkins
+
+Artifact Repository, contains the binaries, dll's only . It doesn't contain source code. in .net terms Build Package will be saved here, from here it will move to Deployment Servers. 
+Artifact Repositories contain versioning here, Ex usage like Nexus, JFrog etc 
+
+
+
+
+
+
+
+
+Meaningful article
+https://www.devbridge.com/articles/continuous-integration-delivery-and-deployment-in-net-projects/
