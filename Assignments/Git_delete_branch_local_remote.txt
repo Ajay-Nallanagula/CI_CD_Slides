@@ -1,0 +1,100 @@
+fatal: pathspec 'BlobStorageDemo/Git_Diff.txt' did not match any files
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (testBranch4)
+$ git rm 'BlobStorageDemo/Git\_\Diff.txt'
+fatal: pathspec 'BlobStorageDemo/Git\_\Diff.txt' did not match any files
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (testBranch4)
+$ git commit -a -m "added two dummy files"
+On branch testBranch4
+Untracked files:
+        BlobStorageDemo/Git_Diff.txt
+        BlobStorageDemo/Git_Merge_NoMerge.txt
+
+nothing added to commit but untracked files present
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (testBranch4)
+$ git add  BlobStorageDemo/Git_Diff.txt
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (testBranch4)
+$ git add  BlobStorageDemo/Git_Merge_NoMerge.txt
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (testBranch4)
+$ git commit -a -m "added two dummy files"
+[testBranch4 49cea88] added two dummy files
+ 2 files changed, 230 insertions(+)
+ create mode 100644 BlobStorageDemo/Git_Diff.txt
+ create mode 100644 BlobStorageDemo/Git_Merge_NoMerge.txt
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (testBranch4)
+$ git status
+On branch testBranch4
+nothing to commit, working tree clean
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (testBranch4)
+$ git rm  BlobStorageDemo/Git_Diff.txt
+rm 'BlobStorageDemo/Git_Diff.txt'
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (testBranch4)
+$ git status
+On branch testBranch4
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    BlobStorageDemo/Git_Diff.txt
+
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (testBranch4)
+$ clear
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (testBranch4)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (master)
+$ git branch -v
+* master      95e2bfc comment added to program.cs as testBranch2
+  testBranch  4756f04 change madeto program.cs
+  testBranch2 95e2bfc comment added to program.cs as testBranch2
+  testBranch3 d4fd664 testBranch3 changes
+  testBranch4 49cea88 added two dummy files
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (master)
+$ git branch --merged
+* master
+  testBranch2
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (master)
+$ git branch -d testBranch2
+Deleted branch testBranch2 (was 95e2bfc).
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (master)
+$ git remote -v
+origin  https://github.com/Ajay-Nallanagula/BlobStorageDemo.git (fetch)
+origin  https://github.com/Ajay-Nallanagula/BlobStorageDemo.git (push)
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (master)
+$ git add remote testBranch5 https://github.com/Ajay-Nallanagula/BlobStorageDemo.git
+fatal: pathspec 'remote' did not match any files
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (master)
+$ git remote add testBranch5 https://github.com/Ajay-Nallanagula/BlobStorageDemo.git
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (master)
+$ git remote -v
+origin  https://github.com/Ajay-Nallanagula/BlobStorageDemo.git (fetch)
+origin  https://github.com/Ajay-Nallanagula/BlobStorageDemo.git (push)
+testBranch5     https://github.com/Ajay-Nallanagula/BlobStorageDemo.git (fetch)
+testBranch5     https://github.com/Ajay-Nallanagula/BlobStorageDemo.git (push)
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (master)
+$ git remote rm testBranch5
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (master)
+$ git remote -v
+origin  https://github.com/Ajay-Nallanagula/BlobStorageDemo.git (fetch)
+origin  https://github.com/Ajay-Nallanagula/BlobStorageDemo.git (push)
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (master)
+$

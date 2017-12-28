@@ -1,0 +1,119 @@
+Please make sure you have the correct access rights
+and the repository exists.
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (master)
+$ git push testBranch2 origin/master
+fatal: 'testBranch2' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (master)
+$ git push origin\master testBranch2
+fatal: 'originmaster' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (master)
+$ git push origin/master testBranch2
+fatal: 'origin/master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (master)
+$ git push master testBranch2
+fatal: 'master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (master)
+$ git push origin master
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 402 bytes | 0 bytes/s, done.
+Total 4 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/Ajay-Nallanagula/BlobStorageDemo.git
+   119f57f..95e2bfc  master -> master
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (master)
+$ ^C
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (master)
+$ clear
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (master)
+$ git branch testBranch3
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (master)
+$ git checkout testBranch3
+Switched to branch 'testBranch3'
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (testBranch3)
+$ git status
+On branch testBranch3
+nothing to commit, working tree clean
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (testBranch3)
+$ git commit -a -m "added testBranch3"
+[testBranch3 e54a6f7] added testBranch3
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (testBranch3)
+$ git diff program.cs
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (testBranch3)
+$ git diff Program.cs
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (testBranch3)
+$ git diff Head Program.cs
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (testBranch3)
+$ git diff
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (testBranch3)
+$ git diff master Program.cs
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (testBranch3)
+$ git status
+On branch testBranch3
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   BlobStorageDemo/Program.cs
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (testBranch3)
+$ git diff
+diff --git a/BlobStorageDemo/Program.cs b/BlobStorageDemo/Program.cs
+index c8793e5..1125b09 100644
+--- a/BlobStorageDemo/Program.cs
++++ b/BlobStorageDemo/Program.cs
+@@ -15,7 +15,7 @@ using BlobStorageDemo.Models.TableEntites;
+ using Microsoft.WindowsAzure.Storage.Queue;
+
+
+-//https://docs.microsoft.com/en-us/azure/storage/storage-dotnet-how-to-use-blobs  testBranch2 Added TestBranch3
++//https://docs.microsoft.com/en-us/azure/storage/storage-dotnet-how-to-use-blobs  testBranch2 Subtracted TestBranch3^M
+ namespace AzureStorageDemo
+ {
+     class Program
+
+Nallanagula.Ajay@AjayKumar MINGW64 /C/Users/Ajay Kumar/Desktop/Devops/BlobStorage/BlobStorageDemo (testBranch3)
+$
